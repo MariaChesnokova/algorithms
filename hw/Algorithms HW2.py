@@ -3,7 +3,7 @@ def split_in_half(n):
     center = len(n) // 2
     first_half = n[:center]
     second_half = n[center:]
-    if len(n) != 0:
+    if len(n)%2 != 0:
         first_half = n[:center + 1]
         second_half = n[center + 1:]
     result = second_half + first_half
