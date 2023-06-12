@@ -24,3 +24,13 @@ string3 = 'abcde'
 print(unique_characters(string1))
 print(unique_characters(string2))
 print(unique_characters(string3))
+
+# difference in array with strings
+def missing_elem(arr1, arr2):
+    missing_elements = set(arr1)-set(arr2)
+    return missing_elements
+
+my_list1 = [1,6,10,7,2,11]
+my_list2 = [6,1,2,7,11,11]
+
+print(missing_elem(my_list1, my_list2))
